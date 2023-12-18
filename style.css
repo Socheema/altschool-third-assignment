@@ -85,7 +85,6 @@ main > .main__container {
   background: #fff;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05),
     0px 15px 35px 0px rgba(43, 64, 78, 0.1);
-
 }
 
 main .main__container .l__section {
@@ -107,6 +106,16 @@ main .main__container .l__section {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-bottom: 24px;
+  }
+  hr {
+    position: relative;
+    left: -48px;
+    width: 580px;
+    background: #f5f7fa;
+    opacity: 0.2005;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -114,6 +123,7 @@ main .main__container .l__section {
   display: flex;
   flex-direction: column;
   gap: 15px;
+
   h2 {
     display: inline-flex;
     align-items: center;
@@ -191,6 +201,7 @@ h2 + div {
 .basic__info_lname {
   display: flex;
   flex-direction: column;
+
   gap: 7px;
   label {
     width: 227px;
@@ -226,6 +237,7 @@ h2 + div {
   display: flex;
   flex-direction: column;
   gap: 7px;
+
   label {
     width: 187px;
     height: 17px;
@@ -262,10 +274,8 @@ h2 + div {
   flex-direction: column;
   gap: 15px;
   h2 {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-
-    height: 22px;
     color: #1d2c3c;
     font-family: "Lato";
     font-size: 18px;
@@ -273,30 +283,37 @@ h2 + div {
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.16px;
-    padding: 2px 0 6px;
+    height: 32px;
+
     gap: 10px;
     :not(span) {
-      width: 246px;
+      width: 220px;
+    }
+    span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border: 2px solid #548bc5;
+      border-radius: 50%;
+      color: #548bc5;
+      font-family: "Lato";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.142px;
     }
   }
-  span {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    border: 2px solid #548bc5;
-    border-radius: 50%;
-    color: #548bc5;
-    font-size: 16px;
-  }
+
   .payment__info-input {
     display: flex;
     flex-direction: column;
     gap: 7px !important;
     label {
       color: #1d2c3c;
-      font-family: Lato;
+      font-family: "Lato";
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
@@ -380,6 +397,7 @@ h2 + div {
   flex-direction: column;
   gap: 15px;
   padding: 0 !important;
+
   button {
     width: 483px;
     height: 52px;
@@ -447,6 +465,256 @@ main .main__container .r__section {
   flex-direction: column;
   border-radius: 0px 6px 6px 0px;
   background: #1179bf;
-  max-width: 312px;
+  width: 312px;
+  height: 795px;
   flex-shrink: 0;
+  padding: 42px 37px 42px 46px;
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 43px !important;
+    width: 312px;
+    height: 796px;
+    .r__section-content1 {
+      width: 231px;
+      height: 152px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      > h2 {
+        color: #fff;
+        font-family: "lato";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.01px;
+        width: 93px;
+        height: 24px;
+      }
+
+      > div {
+        display: flex;
+        gap: 3px !important;
+        width: 140px;
+        height: 72px;
+        justify-content: center;
+        p {
+          width: 14px;
+          height: 29px;
+          color: #fff;
+          font-family: "Lato";
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: -0.015px;
+          margin-top: 9px;
+        }
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 121px;
+          height: 72px;
+          > h3:not(.sub) {
+            color: #fff;
+            font-family: "Lato";
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            letter-spacing: -0.015px;
+
+            .sub {
+              color: #fff;
+              font-family: "Lato";
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: -0.015px;
+            }
+          }
+        }
+      }
+      p {
+        width: 229px;
+        height: 48px;
+        color: #fff;
+        font-family: "Lato";
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.008px;
+      }
+    }
+    .r__section-content2 {
+      display: flex;
+      flex-direction: column;
+      width: 170px;
+      height: 96px;
+      gap: 10px;
+      > div {
+        display: flex;
+        gap: 11px;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 20px;
+          height: 20px;
+          object-fit: cover;
+        }
+        p {
+          color: #fff;
+          font-family: "Lato";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 150% */
+          letter-spacing: -0.008px;
+          span {
+            color: #fff;
+            font-family: "Lato";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: -0.008px;
+          }
+        }
+      }
+      div + div {
+        display: flex;
+        gap: 11px;
+        align-items: center;
+        justify-content: flex-start;
+        img {
+          width: 20px;
+          height: 20px;
+          object-fit: cover;
+        }
+      }
+    }
+    .r__section-content3 {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 186px;
+      height: 50px;
+      > p {
+        color: #fff;
+        font-family: "Lato";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.008px;
+        span {
+          color: #fff;
+          font-family: "Lato";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: -0.008px;
+        }
+      }
+      p + p {
+        border-bottom-width: 180px;
+        border-bottom: 4px solid rgba(185, 245, 255, 0.5036);
+        span {
+          color: #fff;
+          font-family: "Lato";
+          font-size: 16px;
+          font-style: italic;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: -0.008px;
+        }
+      }
+    }
+    .r__section-content4 {
+      width: 229px;
+      height: 196px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 43px;
+      border-top-width: 224px;
+      border-top: 2px solid rgba(255, 255, 255, 0.2005);
+      gap: 17px;
+      p {
+        width: 227px;
+        height: 96px;
+        color: #fff;
+        font-family: "Lato";
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 24px; /* 133.333% */
+        letter-spacing: -0.009px;
+        span {
+          color: #fff;
+          font-family: "Lato";
+          font-size: 18px;
+          font-style: italic;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: -0.009px;
+        }
+      }
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 14px;
+        width: 100%;
+        img {
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        p {
+          height: 19px;
+          color: #fff;
+          font-family: "Lato";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: -0.008px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+main > #copyright {
+  align-self: center;
+  width: 867px;
+  height: 17px;
+  color: #636b6f;
+  text-align: center;
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 33px;
+  span {
+    color: #31708f;
+    font-family: "Lato";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
