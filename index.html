@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ca9926ec2a.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <title>WP Pusher</title>
   </head>
@@ -12,7 +16,7 @@
         <figure>
           <img src="./assets/wppusher-logo copy.png" alt="wp pusher logo" />
         </figure>
-        <nav>
+        <nav id="nav">
           <ul>
             <li><a href="#">Download</a></li>
             <li><a href="#">Learn More</a></li>
@@ -21,15 +25,17 @@
             <li><a class="link_border" href="#">Account</a></li>
           </ul>
         </nav>
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark close"></i>
       </header>
       <main>
         <div class="main__container">
           <div class="l__section">
             <header class="l__section-header">
               <h3>Checkout</h3>
-              <hr>
+              <hr />
             </header>
-           
+
             <div class="basic__info">
               <h2><span>1</span> Your Basic Information</h2>
               <div>
@@ -142,9 +148,11 @@
             </div>
           </div>
         </div>
-        <p id="copyright"> &copy; 2018 WP Pusher IVS .  <span>Terms of Service.</span></p>
-       
+        <p id="copyright">
+          &copy; 2018 WP Pusher IVS . <span>Terms of Service.</span>
+        </p>
       </main>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
