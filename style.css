@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.fa-solid{
+  display: none;
+}
 
 body {
   font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -727,215 +730,186 @@ main > #copyright {
   display: block;
 }
 
-@media screen and (max-width: 430px) {
-  body {
+
+
+@media screen and (max-width:430px){
+  main,header.wrapper,body{
+    width: 100% !important;
+  }
+  main{
+    margin: 10px auto !important;
+    width: 100% !important;
+  }
+
+  main > p{
+    text-align: center;
     position: relative;
-    overflow-x: hidden;
+    left: -250px;
+    margin: 0 auto;
+    margin-top: 5px !important;
+  }
+
+  header:not(.l__section > header){
+    height: 50px;
+    align-items: center !important;
+    padding: 0 !important;
+    margin-bottom: 15px;
+    border-bottom: none !important;
+  }
+
+  header figure img{
+    width: 150px !important;
+    object-fit: cover;
+    height: inherit !important;
+  }
+
+  .l__section > header > h3{
+    font-size: 1.5rem !important;
+    margin-bottom: -8px !important;
+  }
+
+  .wrapper{
+    padding: 0;
+  }
+
+  .main__container{
+    flex-direction: column;
+    gap: 10px !important;
+  }
+
+  .main__container > .l__section, .main__container > .r__section, .main__container > p{
+    margin: 0 5px !important;
+  }
+
+  .l__section, .r__section{
+    width: 100% !important;
+    padding: 10px 20px !important;
+    gap: 30px !important;
+    height: auto !important;
+  }
+
+
+  .basic__info > div{
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .basic__info input{
+    width: 100% !important;
+  }
+
+  .basic__info-password > input{
+    width: 100% !important;
+  }
+
+  .payment__info{
+    width: 100% !important;
+  }
+
+  .payment__info-input{
+    width: 100% !important;
+  }
+
+  .payment__info-input > .input__container{
+    width: 100% !important;
+   
+  }
+
+  .input__container > div{
+    display: inline-block !important;
+    width: fit-content !important;
+  }
+
+  .input__container > div > input:first-of-type{
+    display: inline-block !important;
+    width: 60px !important;
+    text-align: left;
+    margin-right: -2px !important;
+  }
+
+  .payment__info-input > .input__container > div{
+    flex-direction: column !important;
+  }
+
+  .lst__section{
+    width: 100% !important;
+  }
+
+  .lst__section > button{
+    width: 100% !important;
+  }
+
+  .r__section_container,.r__section-content1, .r__section-content2, .r__section-content3, .r__section-content4{
+    width: 100% !;
+  }
+
+
+  body{
     background: #f5f8fa !important;
-    .wrapper {
-      width: 430px !important;
-      height: auto;
-      padding: 0 !important ;
-      background: #f5f8fa !important;
-      header {
-        height: 80px !important;
-        width: 100% !important;
-        position: relative;
-        align-items: center;
-        padding: 15px 5px !important;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: none !important;
-       
-
-        img {
-          width: 125px;
-          height: 25px;
-          object-fit: cover;
-        }
-      
-        nav {
-          position: absolute;
-          left: -200px;
-          top: 50px;
-          width: 400px;
-          height: 100vh;
-          background: #1179bf;
-          z-index: 1;
-          display: none;
-          opacity: 0;
-          animation: slideIn 1s ease-in-out forwards;
-          ul {
-            display: block;
-            li:not(:last-child) {
-              display: block;
-              margin-bottom: 10px;
-              padding: 10px;
-              border-bottom: 1px solid #2079b4;
-              a {
-                font-size: 1.2rem;
-                color: #fff;
-              }
-            }
-            li:nth-of-type(5) {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              margin: -5px auto 0 !important;
-              width: 80%;
-              border-radius: 15px;
-              border: 0.5px solid #fff;
-              box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05),
-                0px 15px 35px 0px rgba(43, 64, 78, 0.1);
-              a {
-                background-color: #1179bf;
-                color: #fff;
-                text-align: center;
-              }
-            }
-          }
-        }
-        .close{
-          display: none;
-        }
-
-        .fa-solid{
-        font-size: 1.6rem;
-       
-        }
-        .fa-xmark, .fa-bars{
-          position: absolute;
-          right: 90px;
-        
-        }
-      }
-    }
-  }
-  .main__container {
-    width: 430px !important;
-    flex-direction: column-reverse;
-    gap: 0 !important;
-    height: auto !important;
-    .l__section {
-      width: 100% !important;
-      padding: 10px !important;
-      margin: 0 auto !important;
-      gap: 30px !important;
-      height: max-content !important;
-
-      > .l__section-header {
-        hr {
-          width: 100%;
-        }
-      }
-      .basic__info {
-        width: 100%;
-        gap: 10px !important;
-        div {
-          flex-direction: column;
-          width: 100%;
-          gap: 10px !important;
-          .basic__info_fname,
-          .basic__info_lname {
-            width: 100%;
-            input {
-              width: 80%;
-            }
-          }
-        }
-      }
-      .basic__info-password {
-        width: 100% !important;
-        input {
-          width: 80% !important;
-        }
-      }
-      .payment__info-input {
-        .input__container {
-          width: 100% !important;
-          align-items: center;
-          justify-content: flex-start;
-          width: 80% !important;
-
-          > div {
-            justify-content: flex-start;
-
-            width: 150px !important;
-            margin-left: -20px !important;
-            input:first-child {
-              display: inline-block;
-              width: 70px !important;
-              text-align: left !important;
-            }
-            input:last-child {
-              display: inline-block;
-              width: 35px !important;
-              text-align: center !important;
-
-              margin-left: -10px !important;
-            }
-          }
-        }
-      }
-      .lst__section {
-        display: flex;
-        flex-direction: column;
-        width: 100% !important;
-        button {
-          width: 80% !important;
-        }
-        .help {
-          width: 100% !important;
-        }
-        .stripe- {
-          margin-left: -30px;
-          align-self: center;
-        }
-      }
-    }
-    .r__section {
-      width: 360px !important;
-      margin-top: -25px !important;
-      .r__section_container {
-        .r__section-content1 {
-          flex-direction: column;
-        }
-      }
-    }
+    overflow-x: hidden;
   }
 
-  body main {
-    width: 430px !important;
-    height: auto !important;
-    #copyright {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      left: 45px;
-      bottom: 10px;
-      width: max-content !important;
-    }
+  .fa-solid{
+    position: relative;
+    right: 10px;
+    font-size: 1.5rem;
   }
+
+  .fa-bars{
+    display: block;
+  }
+
+  nav{
+position: absolute;
+left: 0;
+top: 50px;
+background: #1179bf;
+width: 100% !important;
+padding: 20px !important;
+z-index: 1;
+display: none;
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  nav ul li:not(:last-of-type) a{
+    font-size: 1.3rem;
+  }
+
+  nav ul li:last-child{
+    align-self: center;
+    width: 60%;
+    border-radius: 13px;
+    border: .5px solid #000 !important;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  nav ul li:last-child{
+    align-self: center;
+    width: 60%;
+    border-radius: 13px;
+    border: .5px solid #000 !important;
+    align-items: center;
+    justify-content: center;
+
+  }
+
   .close{
     display: none;
   }
-}
 
-
-
-@keyframes slideIn {
-  from {
-    left: -200px;
-    opacity: 0;
+  .active{
+    display: block;
   }
-  to {
-    left: 0;
-    opacity: 1;
-  }
+  
 }
-
-
 
 
 

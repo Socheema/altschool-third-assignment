@@ -1,6 +1,7 @@
 const openMenu = document.querySelector(".fa-bars");
 const closeMenu = document.querySelector(".fa-xmark");
   const menu = document.querySelector("nav")
+  const header = document.querySelector("#header")
 
 
   function triggerAnimation() {
@@ -10,16 +11,18 @@ const closeMenu = document.querySelector(".fa-xmark");
 
 openMenu.addEventListener("click", () => {
   menu.style.display = "block";
-    triggerAnimation();
   openMenu.classList.toggle("close")
-    closeMenu.classList.toggle("close")
+  header.style.backgroundColor = "#1179bf"
+    closeMenu.classList.add("active")
+    console.log(closeMenu)
 });
 
 
 
 closeMenu.addEventListener("click", () => {
     menu.style.display = "none";
-    closeMenu.classList.toggle("close")
+    header.style.backgroundColor = ""
+    closeMenu.classList.toggle("active")
     openMenu.classList.toggle("close")
     
 
