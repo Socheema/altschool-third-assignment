@@ -820,6 +820,10 @@ main > #copyright {
     width: fit-content !important;
   }
 
+  .l__section-header > hr{
+    display: none;
+  }
+
   .input__container > div > input:first-of-type{
     display: inline-block !important;
     width: 60px !important;
@@ -1001,9 +1005,16 @@ display: none;
 
   .input__container > div > input:first-of-type{
     display: inline-block !important;
-    width: 60px !important;
+    width: 50px !important;
     text-align: left;
-    margin-right: -2px !important;
+  }
+
+
+  .input__container > div > input:last-of-type{
+    display: inline-block !important;
+    width: 30px !important;
+    text-align: left;
+    
   }
 
   .payment__info-input > .input__container > div{
@@ -1012,6 +1023,16 @@ display: none;
 
   .lst__section{
     width: 100% !important;
+  }
+
+  .lst__section > .help{
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+
+
+  .lst__section > .help br{
+    display: none;
   }
 
   .lst__section > button{
